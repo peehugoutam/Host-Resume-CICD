@@ -88,3 +88,12 @@ Note :- Need to setup your EC2 ubuntu VM
     sudo systemctl status apache2
 8.  View error logs for Apache:
     sudo tail -f /var/log/apache2/error.log
+
+# Same EC2 instance can be connect on FTP to see code
+
+1. Host = Public ipv4 address
+2. Logon type = key file
+3. Protocol = SFTP
+4. User = ubuntu/ec2-user
+5. Key file = .pem file
+6. Path = /var/www/html
