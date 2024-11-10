@@ -22,6 +22,6 @@ jobs:
           touch ~/.ssh/known_hosts
           ssh-keyscan -H ${{ secrets.HOST_DNS }} >> ~/.ssh/known_hosts
 
-      - name: Copy index.html to EC2
-        run: |
-          scp -o StrictHostKeyChecking=no index.html ${{ secrets.USERNAME }}@${{ secrets.HOST_DNS }}:/var/www/html/index.html
+- name: Copy index.html to EC2
+  run: |
+    scp -o StrictHostKeyChecking=no index.html ${{ secrets.USERNAME }}@${{ secrets.HOST_DNS }}:/home/${{ secrets.USERNAME }}/index.html
