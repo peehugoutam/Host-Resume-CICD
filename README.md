@@ -43,6 +43,7 @@ Host Your Resume on AWS EC2 with a CI/CD Setup Using GitHub Actions
     workflows directory can contain different yml file that contain different setting to deploy automatically code on EC2
 9.  Go to setting -> secret & variables -> action -> Add repository secret(mentioned in yml file) according to current repo setting option
 10. Whenever push taken place on mail branch then code will automatically deploy on EC2
+11. All this deployment that is going on can we see on action tab where deploy.yml workflow will be shown
 
 ## Ec2 setup
 
